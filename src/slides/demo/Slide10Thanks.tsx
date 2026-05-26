@@ -1,5 +1,6 @@
 import React from 'react';
-import { Linkedin, Instagram } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
+import { QRCodeSVG } from 'qrcode.react';
 
 export default function Slide10Thanks() {
   return (
@@ -16,39 +17,26 @@ export default function Slide10Thanks() {
             Let's <span style={{ color: '#0066FF', fontWeight: 600 }}>connect.</span>
           </p>
 
-          <div className="flex flex-col gap-5">
-            <div className="flex items-center gap-5">
-              <div className="w-14 h-14 rounded-full flex items-center justify-center" style={{ background: '#000' }}>
-                <Linkedin className="w-7 h-7" style={{ color: '#FFF' }} />
-              </div>
-              <p className="text-2xl font-medium" style={{ color: '#000' }}>LinkedIn</p>
+          <div className="flex items-center gap-5">
+            <div className="w-14 h-14 rounded-full flex items-center justify-center" style={{ background: '#000' }}>
+              <Linkedin className="w-7 h-7" style={{ color: '#FFF' }} />
             </div>
-            <div className="flex items-center gap-5">
-              <div className="w-14 h-14 rounded-full flex items-center justify-center" style={{ background: '#000' }}>
-                <Instagram className="w-7 h-7" style={{ color: '#FFF' }} />
-              </div>
-              <p className="text-2xl font-medium" style={{ color: '#000' }}>Instagram</p>
-            </div>
+            <p className="text-2xl font-medium" style={{ color: '#000' }}>LinkedIn</p>
           </div>
         </div>
 
         <div className="shrink-0">
           <div
-            className="w-[420px] h-[420px] rounded-3xl flex flex-col items-center justify-center"
-            style={{ background: '#FFF', border: '2px dashed #CCC' }}
+            className="w-[420px] h-[420px] rounded-3xl flex items-center justify-center"
+            style={{ background: '#FFF', border: '1px solid #E5E5E5' }}
           >
-            <div className="grid grid-cols-8 gap-1 mb-6 opacity-30">
-              {Array.from({ length: 64 }).map((_, i) => (
-                <div
-                  key={i}
-                  className="w-6 h-6"
-                  style={{ background: Math.random() > 0.5 ? '#000' : 'transparent' }}
-                />
-              ))}
-            </div>
-            <p className="text-lg uppercase tracking-[0.3em] font-medium" style={{ color: '#888' }}>
-              QR Placeholder
-            </p>
+            <QRCodeSVG
+              value="https://www.linkedin.com/in/pavel-movilean-7ab6a2405"
+              size={340}
+              level="H"
+              fgColor="#000000"
+              bgColor="#FFFFFF"
+            />
           </div>
         </div>
       </div>

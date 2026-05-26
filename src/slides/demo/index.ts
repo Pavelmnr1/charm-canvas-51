@@ -15,9 +15,9 @@ export const demoSlides = [
   { component: Slide03Start, name: 'Where it started', template: 'quote' },
   { component: Slide04Switch, name: 'The switch', template: 'comparison' },
   { component: Slide05Hackathon, name: 'Hackathon moment', template: 'data-story' },
+  { component: Slide09Demo, name: 'See it live', template: 'quote' },
   { component: Slide06Limits, name: "What AI can't do", template: 'quote' },
   { component: Slide07Learned, name: 'What I learned', template: 'title' },
   { component: Slide08Next, name: "What's next", template: 'three-up' },
-  { component: Slide09Demo, name: 'See it live', template: 'quote' },
   { component: Slide10Thanks, name: 'Thanks', template: 'two-column' },
 ];
