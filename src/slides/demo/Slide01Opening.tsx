@@ -12,7 +12,7 @@ export default function Slide01Opening() {
           with <span style={{ color: '#0066FF' }}>AI.</span>
         </h1>
         <p className="mt-16 text-4xl font-light max-w-3xl leading-snug" style={{ color: '#444' }}>
-          While most people my age<br />are just scrolling.
+          At 17.
         </p>
       </div>
     </div>
